@@ -1,0 +1,3 @@
+<?php
+// Instead of writing in all those index.php files, I could have worked in the WebSec.php a bit more...
+?>

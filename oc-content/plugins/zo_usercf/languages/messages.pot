@@ -1,0 +1,318 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-09-23 21:56+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: classes/UserCf.php:56
+#, php-format
+msgid "Field %s is missing."
+msgstr ""
+
+#: classes/UserCf.php:228
+msgid "Custom Fields"
+msgstr ""
+
+#: classes/UserCf.php:229
+msgid "List"
+msgstr ""
+
+#: classes/UserCf.php:230 views/admin/add.php:11 views/admin/header.php:33
+msgid "Add a field"
+msgstr ""
+
+#: classes/UserCf.php:231 views/admin/header.php:36 views/admin/help.php:10
+msgid "Help"
+msgstr ""
+
+#: classes/controllers/Admin.php:45
+msgid "Error while adding the field. Please try again."
+msgstr ""
+
+#: classes/controllers/Admin.php:49
+msgid "Field added successfully."
+msgstr ""
+
+#: classes/controllers/Admin.php:58
+msgid "ID is not valid!"
+msgstr ""
+
+#: classes/controllers/Admin.php:81
+msgid "Error while editing the field. Please try again."
+msgstr ""
+
+#: classes/controllers/Admin.php:85
+msgid "Field edited successfully."
+msgstr ""
+
+#: classes/controllers/Admin.php:97
+msgid "Error while deleting the fields. Please try again."
+msgstr ""
+
+#: classes/controllers/Admin.php:102
+msgid "Error while deleting the field. Please try again."
+msgstr ""
+
+#: classes/controllers/Admin.php:107
+msgid "Field(s) deleted successfully."
+msgstr ""
+
+#: classes/controllers/Admin.php:118
+msgid "Error while enabling the fields. Please try again."
+msgstr ""
+
+#: classes/controllers/Admin.php:123
+msgid "Error while enabling the field. Please try again."
+msgstr ""
+
+#: classes/controllers/Admin.php:128
+msgid "Field(s) enabled successfully."
+msgstr ""
+
+#: classes/controllers/Admin.php:139
+msgid "Error while disabling the fields. Please try again."
+msgstr ""
+
+#: classes/controllers/Admin.php:144
+msgid "Error while disabling the field. Please try again."
+msgstr ""
+
+#: classes/controllers/Admin.php:149
+msgid "Field(s) disabled successfully."
+msgstr ""
+
+#: classes/controllers/Admin.php:156
+#, php-format
+msgid "Field \"%s\" is missing."
+msgstr ""
+
+#: helpers/hUserCf.php:34
+msgid "Text"
+msgstr ""
+
+#: helpers/hUserCf.php:35
+msgid "Number"
+msgstr ""
+
+#: helpers/hUserCf.php:36
+msgid "Range"
+msgstr ""
+
+#: helpers/hUserCf.php:37
+msgid "Textarea"
+msgstr ""
+
+#: helpers/hUserCf.php:38
+msgid "Radio"
+msgstr ""
+
+#: helpers/hUserCf.php:39
+msgid "Dropdown"
+msgstr ""
+
+#: helpers/hUserCf.php:40
+msgid "Checkbox"
+msgstr ""
+
+#: helpers/hUserCf.php:41
+msgid "Checkbox group"
+msgstr ""
+
+#: helpers/hUserCf.php:42
+msgid "URL"
+msgstr ""
+
+#: helpers/hUserCf.php:43
+msgid "Date"
+msgstr ""
+
+#: helpers/hUserCf.php:96 views/admin/add.php:62 views/admin/edit.php:70
+#: views/admin/list.php:45
+msgid "Public"
+msgstr ""
+
+#: helpers/hUserCf.php:96 views/admin/add.php:65 views/admin/edit.php:73
+msgid "Private"
+msgstr ""
+
+#: helpers/hUserCf.php:103
+msgid "Register only"
+msgstr ""
+
+#: helpers/hUserCf.php:106
+msgid "Dashboard only"
+msgstr ""
+
+#: helpers/hUserCf.php:110
+msgid "Register and dashboard"
+msgstr ""
+
+#: helpers/hUserCf.php:117 views/admin/add.php:51 views/admin/edit.php:59
+msgid "Enabled"
+msgstr ""
+
+#: helpers/hUserCf.php:117 views/admin/add.php:54 views/admin/edit.php:62
+msgid "Disabled"
+msgstr ""
+
+#: helpers/hUserCf.php:125 views/admin/add.php:73 views/admin/edit.php:81
+msgid "Yes"
+msgstr ""
+
+#: helpers/hUserCf.php:125 views/admin/add.php:76 views/admin/edit.php:84
+msgid "No"
+msgstr ""
+
+#: views/admin/add.php:15 views/admin/edit.php:18 views/admin/list.php:42
+msgid "Name"
+msgstr ""
+
+#: views/admin/add.php:16 views/admin/edit.php:19
+msgid "Enter a name for the field."
+msgstr ""
+
+#: views/admin/add.php:20 views/admin/edit.php:23 views/admin/list.php:43
+msgid "Type"
+msgstr ""
+
+#: views/admin/add.php:33 views/admin/edit.php:41 views/admin/list.php:44
+msgid "Options"
+msgstr ""
+
+#: views/admin/add.php:34 views/admin/edit.php:42
+msgid "Enter possible field values."
+msgstr ""
+
+#: views/admin/add.php:37 views/admin/edit.php:45
+msgid "Min"
+msgstr ""
+
+#: views/admin/add.php:38 views/admin/edit.php:46
+msgid "Enter min field value. Can be left empty."
+msgstr ""
+
+#: views/admin/add.php:41 views/admin/edit.php:49
+msgid "Max"
+msgstr ""
+
+#: views/admin/add.php:42 views/admin/edit.php:50
+msgid "Enter possible field value. Can be left empty."
+msgstr ""
+
+#: views/admin/add.php:48 views/admin/edit.php:56 views/admin/list.php:47
+msgid "Status"
+msgstr ""
+
+#: views/admin/add.php:59 views/admin/edit.php:67
+msgid "Privacy"
+msgstr ""
+
+#: views/admin/add.php:70 views/admin/edit.php:78
+msgid "Required"
+msgstr ""
+
+#: views/admin/add.php:82 views/admin/edit.php:90 views/admin/list.php:46
+msgid "Position"
+msgstr ""
+
+#: views/admin/add.php:85 views/admin/edit.php:93
+msgid "Register form"
+msgstr ""
+
+#: views/admin/add.php:88 views/admin/edit.php:96
+msgid "Dashboard form"
+msgstr ""
+
+#: views/admin/add.php:91 views/admin/edit.php:99
+msgid "Both"
+msgstr ""
+
+#: views/admin/add.php:98
+msgid "Add"
+msgstr ""
+
+#: views/admin/add.php:159 views/admin/edit.php:186
+msgid "Max must be bigger than min."
+msgstr ""
+
+#: views/admin/edit.php:13
+msgid "Edit a field"
+msgstr ""
+
+#: views/admin/edit.php:106 views/admin/list.php:64
+msgid "Edit"
+msgstr ""
+
+#: views/admin/header.php:23
+msgid "User Custom Fields"
+msgstr ""
+
+#: views/admin/header.php:30
+msgid "Fields"
+msgstr ""
+
+#: views/admin/header.php:39
+msgid "Osclass Community"
+msgstr ""
+
+#: views/admin/header.php:42
+msgid "WEBmods"
+msgstr ""
+
+#: views/admin/list.php:13
+msgid "All fields"
+msgstr ""
+
+#: views/admin/list.php:18
+msgid "Enable selected"
+msgstr ""
+
+#: views/admin/list.php:21
+msgid "Disable selected"
+msgstr ""
+
+#: views/admin/list.php:24
+msgid "Delete selected"
+msgstr ""
+
+#: views/admin/list.php:30
+msgid ""
+"Warning: deleting fields that have user attached to them may cause problems!"
+msgstr ""
+
+#: views/admin/list.php:41
+msgid "ID"
+msgstr ""
+
+#: views/admin/list.php:48
+msgid "Action"
+msgstr ""
+
+#: views/admin/list.php:67
+msgid "Disable"
+msgstr ""
+
+#: views/admin/list.php:67
+msgid "Enable"
+msgstr ""
+
+#: views/admin/list.php:70
+msgid "Delete"
+msgstr ""
+
+#: views/admin/list.php:137
+msgid "No fields, yet"
+msgstr ""

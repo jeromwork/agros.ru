@@ -1,0 +1,104 @@
+/*
+Plugin Name: HybridAuth
+Plugin URI: http://rajasekar.co.in/
+Description: HybridAuth A PHP Library for authentication through Facebook, Twitter, Google
+Version: 1.1.0
+Author: RajaSekar
+Author URI: http://rajasekar.co.in/
+Plugin update URI: hybridauth
+*/
+
+.hybrid_login{
+	margin: 6px 0;
+}
+.hybrid_btn{
+	text-decoration: none;
+	margin: 20px auto;
+        margin-top: 3px;
+        margin-right: auto;
+        margin-bottom: 3px;
+        margin-left: auto;
+	font-size: 14px;
+       -moz-border-radius: 5px;
+       -webkit-border-radius: 5px;
+    font-family: Arial,sans-serif;
+	font-weight: normal;
+	display: inline-block;
+	height: 36px;
+        width: 220px;
+    line-height: 36px;
+	color: #FFF;
+	padding: 0 10px;
+	box-shadow: 0 -2px 0 0 rgba(0, 0, 0, 0.2) inset;
+		-webkit-box-shadow: 0 -2px 0 0 rgba(0, 0, 0, 0.2) inset;
+			-moz-box-shadow: 0 -2px 0 0 rgba(0, 0, 0, 0.2) inset;
+}
+.hybrid_btn:hover{
+	color: #FFF;
+}
+.hybrid_btn.facebook:hover{
+	background: #3b5998;
+	margin-top: 5px;
+}
+.hybrid_btn.facebook{
+	background: #293F6F;
+	margin-top: 5px;
+}
+.hybrid_btn.google{
+	background: #dd4b39;
+	margin-top: 5px;
+}
+.hybrid_btn.google:hover{
+	background: #F46A5B;
+	margin-top: 5px;
+}
+.hybrid_btn.twitter{
+	background: #55acee;
+	margin-top: 5px;
+}
+.hybrid_btn.twitter:hover{
+	background: #3F78A6;
+	margin-top: 5px;
+}
+.hybrid_btn.Vkontakte{
+	background: #557299;
+	margin-top: 5px;
+}
+.hybrid_btn.Vkontakte:hover{
+	background: #305075;
+	margin-top: 5px;
+}
+
+.hybrid_btn.Odnoklassniki{
+	background: #eb932f;
+	margin-top: 5px;
+}
+.hybrid_btn.Odnoklassniki:hover{
+	background: #ee8208;
+	margin-top: 5px;
+	
+}	
+.hybrid_btn.Mailru{
+	background: #168ee2;
+	margin-top: 5px;
+}
+.hybrid_btn.Mailru:hover{
+	background: #107fcc;
+	margin-top: 5px;
+}	
+.hybrid_btn.Yandex{
+	background: #f73838;
+	margin-top: 5px;
+}
+.hybrid_btn.Yandex:hover{
+	background: #ff0000;
+	margin-top: 5px;
+}
+.hybrid_btn.Instagram{
+	background: #3F729B;
+	margin-top: 5px;
+}
+.hybrid_btn.Instagram:hover{
+	background: #3F72BB;
+	margin-top: 5px;
+}

@@ -1,0 +1,15 @@
+/* Developed by WEBmods
+ * Zagorski oglasnik j.d.o.o. za usluge | www.zagorski-oglasnik.com
+ *
+ * License: GPL-3.0-or-later
+ * More info in license.txt
+*/
+
+.usercf-range-single .ui-slider-handle, .usercf-range-fromto .ui-slider-handle {
+    width: 2em;
+    height: auto;
+    top: 50%;
+    margin-top: -.8em;
+    text-align: center;
+    line-height: 1.6em;
+}
