@@ -198,6 +198,10 @@ require_once LIB_PATH . 'osclass/compatibility.php';
 
 
 
+
+
+
+
 if( !defined('OSC_CRYPT_KEY') ) {
     define('OSC_CRYPT_KEY', osc_get_preference('crypt_key'));
 }
