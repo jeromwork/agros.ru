@@ -405,6 +405,9 @@ $("#phoneNumberErr").show();
             //mapState.controls = [];
             // Создаём карту.
 
+console.log(obj.properties.get('metaDataProperty'));
+console.log(obj.getCountry());
+console.log(obj.getLocalities());
 console.log(obj);
             createMap(mapState, shortAddress);
             // Выводим сообщение под картой.

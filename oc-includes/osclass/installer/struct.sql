@@ -498,3 +498,28 @@ CREATE TABLE /*TABLE_PREFIX*/t_ban_rule (
 
   PRIMARY KEY (pk_i_id)
 ) ENGINE=InnoDB DEFAULT CHARACTER SET 'UTF8' COLLATE 'UTF8_GENERAL_CI';
+
+
+CREATE TABLE /*TABLE_PREFIX*/t_adress (
+    pk_i_id INT(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+    fk_i_user_id INT(10) UNSIGNED NOT NULL,
+    s_address VARCHAR(100) NULL,
+    s_country VARCHAR(40) NULL,
+    s_province VARCHAR(100)NULL,
+    s_region VARCHAR(100)NULL,
+    s_area VARCHAR(200) NULL,
+    s_locality VARCHAR(100) NULL,
+    s_street VARCHAR(100) NULL,
+    s_fullhouse VARCHAR(100) NULL,
+    d_coord_lat DECIMAL(10,6),
+    d_coord_long DECIMAL(10,6),
+
+        PRIMARY KEY (pk_i_id),
+        FOREIGN KEY (fk_i_user_id) REFERENCES /*TABLE_PREFIX*/t_user (pk_i_id),
+        INDEX idx_s_country (s_country),
+        INDEX idx_s_province (s_province),
+        INDEX idx_s_region (s_region),
+        INDEX idx_s_area (s_area),
+        INDEX idx_s_locality (s_locality),
+        INDEX idx_s_street (s_street)) 
+        ENGINE=InnoDB DEFAULT CHARACTER SET 'UTF8' COLLATE 'UTF8_GENERAL_CI';
