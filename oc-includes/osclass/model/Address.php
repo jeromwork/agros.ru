@@ -108,7 +108,7 @@
                 return array();
             }
 
-            return $this->extendData($result->row(), $locale);
+            return $result->row();
         }
 
         /**
@@ -129,7 +129,7 @@
             if( $result == false ) {
                 return false;
             } else if($result->numRows() == 1){
-                return $this->extendData($result->row());
+                return $result->row();
             } else {
                 return array();
             }
@@ -153,7 +153,7 @@
             if( $result == false ) {
                 return false;
             } else if($result->numRows() == 1){
-                return $this->extendData($result->row());
+                return $result->row();
             } else {
                 return array();
             }
@@ -178,7 +178,7 @@
             if( $result == false ) {
                 return false;
             } else if($result->numRows() == 1){
-                return $this->extendData($result->row());
+                return $result->row();
             } else {
                 return array();
             }
@@ -202,7 +202,7 @@
             if( $result == false ) {
                 return false;
             } else if($result->numRows() == 1){
-                return $this->extendData($result->row());
+                return $result->row();
             } else {
                 return array();
             }
@@ -226,67 +226,13 @@
             if( $result == false ) {
                 return false;
             } else if($result->numRows() == 1){
-                return $this->extendData($result->row());
+                return $result->row();
             } else {
                 return array();
             }
         }
-        /**
-         *
-         *
-         * @access public
-         * @since unknown
-         * @param string $id
-         * @param string $secret
-         * @return array
-         */
-        public function findByIdPasswordSecret($id, $secret, $locale = null)
-        {
-            if($secret=='') { return null; }
-            $date = date("Y-m-d H:i:s", (time()-(24*3600)));
-            $this->dao->select();
-            $this->dao->from($this->getTableName());
-            $conditions = array(
-                'pk_i_id'       => $id,
-                's_pass_code'   => $secret
-            );
-            $this->dao->where($conditions);
-            $this->dao->where("s_pass_date >= '$date'");
-            $result = $this->dao->get();
-
-           if( $result == false ) {
-                return false;
-            } else if($result->numRows() == 1){
-                return $this->extendData($result->row(), $locale);
-            } else {
-                return array();
-            }
-        }
-
-        /**
-         * Add description to user array
-         *
-         * @since 3.1.1
-         * @param $row with user's info
-         * @return array
-         */
-        private function extendData($user, $locale = null) {
-            $this->dao->select();
-            $this->dao->from(DB_TABLE_PREFIX.'t_user_description');
-            $this->dao->where('fk_i_user_id', $user['pk_i_id']);
-            if(!is_null($locale)) {
-                $this->dao->where('fk_c_locale_code', $locale);
-            }
-            $result = $this->dao->get();
-            $descriptions = $result->result();
-
-            $user['locale'] = array();
-            foreach($descriptions as $sub_row) {
-                $user['locale'][$sub_row['fk_c_locale_code']] = $sub_row;
-            }
-            return $user;
-        }
-
+        
+        
 
 /**
          * Delete an user given its id
@@ -296,10 +242,10 @@
          * @param int $id
          * @return bool
          */
-        public function deleteUser($id = null)
+        public function deleteAddress($id = null)
         {
             if($id!=null) {
-                osc_run_hook('delete_user', $id);
+                osc_run_hook('delete_address', $id);
 
                 $this->dao->select('pk_i_id, fk_i_category_id');
                 $this->dao->from(DB_TABLE_PREFIX."t_item");
@@ -319,7 +265,7 @@
                 $this->dao->delete(DB_TABLE_PREFIX.'t_alerts', array('fk_i_user_id' => $id));
                 $deleted = $this->dao->delete($this->getTableName(), array('pk_i_id' => $id));
                 if($deleted===1) {
-                    osc_run_hook('after_delete_user', $id);
+                    osc_run_hook('after_delete_address', $id);
                     return true;
                 }
             }

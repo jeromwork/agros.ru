@@ -150,6 +150,7 @@ require_once LIB_PATH . 'osclass/model/CountryStats.php';
 require_once LIB_PATH . 'osclass/model/RegionStats.php';
 require_once LIB_PATH . 'osclass/model/CityStats.php';
 require_once LIB_PATH . 'osclass/model/BanRule.php';
+require_once LIB_PATH . 'osclass/model/Address.php';
 
 require_once LIB_PATH . 'osclass/model/LocationsTmp.php';
 

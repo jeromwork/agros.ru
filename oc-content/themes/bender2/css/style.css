@@ -24066,9 +24066,11 @@ span.value {
 
 
 
-#map {
+.ymap {
             width: 100%;
             min-height: 300px;
+            margin: 0px 12px 18px 12px;
+            position: relative;
         }
 
 
@@ -24086,12 +24088,7 @@ span.value {
             height: 76px;
         }
 
-        #map {
-            height: 160px;
-            width: 376px;
-            margin: 0px 12px 18px 12px;
-            position: relative;
-        }
+        
 
         #header {
             height: 28px;

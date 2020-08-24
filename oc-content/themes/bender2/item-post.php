@@ -49,11 +49,12 @@ if (bender2_default_location_show_as() == 'dropdown') {
 
         <div class="page-body">
             <div class="row">
-                <div class="col-sm-12"><h1>Объявление</h1>
+                <div class="col-sm-12">
+                    <h1>Объявление</h1>
                     <!-- Product edit card start -->
                     <div class="card">
                         <div class="card-header">
-                            
+
                         </div>
                         <div class="card-block">
                             <div class="row">
@@ -207,23 +208,21 @@ if (bender2_default_location_show_as() == 'dropdown') {
                                             </div>
                                             <div class="tab-pane" id="messages8" role="tabpanel" aria-expanded="false">
                                                 <div class="card-block">
-
-                                                <div id="map"></div>
-                                                <div id="header">
-    <input type="text" id="suggest" class="input" placeholder="Введите адрес">
-    <button type="submit" id="button">Проверить</button>
-</div><div id="footer">
-    <div id="messageHeader"></div>
-    <div id="message"></div>
-</div>
+                                                <input id="location0" type="text" class="mapg" name="location[0][]" placeholder="введите адрес 1">
+			<div id="location0map" class="ymap"></div>
+                                                    
+                                                    <div id="footer">
+                                                        <div id="messageHeader"></div>
+                                                        <div id="message"></div>
+                                                    </div>
                                                     <div class="row">
                                                         <div class="col-sm-6">
 
-                                                       
-                                                                <div class="input-group">
-                                                               
-                                                                </div>
-                                                           
+
+                                                            <div class="input-group">
+
+                                                            </div>
+
 
 
 
@@ -307,7 +306,7 @@ if (bender2_default_location_show_as() == 'dropdown') {
 
 
 
-                    
+
 
 
 
